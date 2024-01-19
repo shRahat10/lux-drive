@@ -17,6 +17,10 @@
           colors: {
             cPrimary: '#E76F51',
             cSecondary: '#264653',
+          },
+          height: {
+            '180': '50rem',
+            '160': '40rem',
           }
         }
       }
@@ -30,9 +34,9 @@
 </head>
 
 <body class="poppins">
-  <header class="bg-cSecondary container mx-auto">
+  <header class="bg-cSecondary">
     <nav class="flex justify-between items-center pt-8 pb-8 pl-6 pr-6 lg:pl-12 lg:pr-12">
-      <h1 class="text-3xl font-bold">Lux Drive</h1>
+      <h1 class="text-3xl font-bold text-cPrimary"><span class="text-white">Lux</span> Drive</h1>
       <ul class="hidden lg:flex justify-center items-center gap-8 text-base text-white font-bold">
         <li>Home</li>
         <li>Shop</li>
@@ -42,11 +46,13 @@
       </ul>
       <div class="lg:hidden dropdown dropdown-end">
         <div tabindex="0">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </div>
-        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40 font-bold flex flex-col items-center gap-4">
+        <ul tabindex="0"
+          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40 font-bold flex flex-col items-center gap-4">
           <li>Home</li>
           <li>Shop</li>
           <li>News</li>
@@ -55,7 +61,64 @@
         </ul>
       </div>
     </nav>
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
+        style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(1\).jpg);">
+        <div
+          class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:bg-white md:bg-opacity-30 md:rounded-2xl p-5">
+          <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Ferrari LaFerrari</h1>
+          <p class="text-white md:text-sm lg:text-xl font-bold">Few cars on the road are more striking. This
+            dragon-like performance car accelerates from 0 to 60 mph in less than 3.0 seconds.</p>
+          <button class="md:mt-2 btn w-fit text-cPrimary md:text-white text-xs lg:text-xl font-bold bg-transparent md:bg-cPrimary border-none">Buy
+            Now</button>
+        </div>
+        <!-- <img src="./images/wallpaperflare.com_wallpaper (1).jpg" class="w-full" /> -->
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="hidden md:flex btn btn-circle opacity-70">❮</a>
+          <a href="#slide2" class="hidden md:flex btn btn-circle opacity-70">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
+        style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(2\).jpg);">
+        <div
+          class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-20 md:rounded-2xl p-5">
+          <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Koenigsegg One</h1>
+          <p class="text-white md:text-sm lg:text-xl font-bold">You can buy a lot with $2 million — a really nice
+            house, about 80
+            Mazda MX-5’s, or this Swedish “megacar”.</p>
+            <button class="md:mt-2 btn w-fit text-cPrimary md:text-white text-xs lg:text-xl font-bold bg-transparent md:bg-cPrimary border-none">Buy
+              Now</button>
+        </div>
+        <!-- <img src="./images/wallpaperflare.com_wallpaper (2).jpg" class="w-full" /> -->
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="hidden md:flex btn btn-circle opacity-70">❮</a>
+          <a href="#slide3" class="hidden md:flex btn btn-circle opacity-70">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
+        style="background-image: url(./images/wallpaperflare.com_wallpaper.jpg);">
+        <div
+          class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:bg-white md:bg-opacity-30 md:rounded-2xl p-5">
+          <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Lamborghini Veneno</h1>
+          <p class="text-white md:text-sm lg:text-xl font-bold">The car is absolutely stunning from every angle, and
+            to this day,
+            we’re not convinced it isn’t an alien spacecraft.</p>
+            <button class="md:mt-2 btn w-fit text-cPrimary md:text-white text-xs lg:text-xl font-bold bg-transparent md:bg-cPrimary border-none">Buy
+              Now</button>
+        </div>
+        <!-- <img src="./images/wallpaperflare.com_wallpaper (5).jpg" class="w-full" /> -->
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="hidden md:flex btn btn-circle opacity-70">❮</a>
+          <a href="#slide1" class="hidden md:flex btn btn-circle opacity-70">❯</a>
+        </div>
+      </div>
+    </div>
   </header>
+  <div class="flex md:hidden justify-center w-full py-2 gap-2">
+    <a href="#slide1" class="btn btn-xs bg-cSecondary text-white">1</a>
+    <a href="#slide2" class="btn btn-xs bg-cSecondary text-white">2</a>
+    <a href="#slide3" class="btn btn-xs bg-cSecondary text-white">3</a>
+  </div>
 </body>
 
 </html>
