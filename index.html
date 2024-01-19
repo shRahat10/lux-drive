@@ -4,14 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cPrimary: '#E76F51',
+            cSecondary: '#264653',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-    <header>
-
-    </header>
+<body class="poppins">
+  <header class="bg-cSecondary container mx-auto">
+    <nav class="flex justify-between items-center pt-8 pl-6 pr-6 lg:pl-12 lg:pr-12">
+      <h1 class="text-3xl font-bold">Lux Drive</h1>
+      <ul class="hidden lg:flex justify-center items-center gap-8 text-base text-white font-bold">
+        <li>Home</li>
+        <li>Shop</li>
+        <li>News</li>
+        <li>Contact</li>
+        <button class="btn w-24  text-base text-white font-bold bg-cPrimary border-none">Log In</button>
+      </ul>
+      <div class="lg:hidden dropdown dropdown-end">
+        <div tabindex="0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40 font-bold flex flex-col items-center gap-4">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>News</li>
+          <li>Contact</li>
+          <button class="btn w-full text-base text-white font-bold bg-cPrimary border-none">Log In</button>
+        </ul>
+      </div>
+    </nav>
+  </header>
 </body>
 
 </html>
