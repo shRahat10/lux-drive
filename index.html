@@ -33,272 +33,282 @@
   </style>
 </head>
 
-<body class="poppins max-w-[1440px] mx-auto">
-  <header class="bg-cSecondary">
-    <nav class="flex justify-between items-center pt-8 pb-8 pl-6 pr-6 lg:pl-12 lg:pr-12">
-      <h1 class="text-3xl font-bold text-cPrimary"><span class="text-white">Lux</span> Drive</h1>
-      <ul class="hidden lg:flex justify-center items-center gap-8 text-base text-white font-bold">
-        <li>Home</li>
-        <li>Shop</li>
-        <li>News</li>
-        <li>Contact</li>
-        <button class="btn w-24  text-base text-white font-bold bg-cPrimary border-none">Log In</button>
-      </ul>
-      <div class="lg:hidden dropdown dropdown-end">
-        <div tabindex="0">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
-        </div>
-        <ul tabindex="0"
-          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40 font-bold flex flex-col items-center gap-4">
+<body class="poppins">
+  <div class="max-w-[1440px] mx-auto">
+    <header class="bg-cSecondary">
+      <nav class="flex justify-between items-center pt-8 pb-8 pl-6 pr-6 lg:pl-12 lg:pr-12">
+        <h1 class="text-3xl font-bold text-cPrimary"><span class="text-white">Lux</span> Drive</h1>
+        <ul class="hidden lg:flex justify-center items-center gap-8 text-base text-white font-bold">
           <li>Home</li>
           <li>Shop</li>
           <li>News</li>
           <li>Contact</li>
-          <button class="btn w-full text-base text-white font-bold bg-cPrimary border-none">Log In</button>
+          <button class="btn w-24  text-base text-white font-bold bg-cPrimary border-none">Log In</button>
         </ul>
+        <div class="lg:hidden dropdown dropdown-end">
+          <div tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40 font-bold flex flex-col items-center gap-4">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>News</li>
+            <li>Contact</li>
+            <button class="btn w-full text-base text-white font-bold bg-cPrimary border-none">Log In</button>
+          </ul>
+        </div>
+      </nav>
+      <div class="carousel w-full">
+        <div id="slide1"
+          class="carousel-item relative w-full h-52 md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
+          style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(1\).jpg);">
+          <div
+            class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:bg-white md:bg-opacity-25 md:rounded-2xl p-5">
+            <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Ferrari LaFerrari</h1>
+            <p class="text-white md:text-sm lg:text-xl font-bold">This dragon-like performance car accelerates from 0 to
+              60 mph in less than 3.0 seconds.</p>
+            <button class="btn w-fit text-cPrimary text-xs md:text-base font-bold bg-transparent border-none p-0">Buy
+              Now</button>
+            <!-- <button class="md:mt-2 btn w-fit text-cPrimary md:text-white text-xs lg:text-xl font-bold bg-transparent md:bg-cPrimary border-none">Buy
+              Now</button> -->
+          </div>
+          <!-- <img src="./images/wallpaperflare.com_wallpaper (1).jpg" class="w-full" /> -->
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="hidden md:flex btn btn-circle opacity-70">❮</a>
+            <a href="#slide2" class="hidden md:flex btn btn-circle opacity-70">❯</a>
+          </div>
+        </div>
+        <div id="slide2"
+          class="carousel-item relative w-full h-52  md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
+          style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(2\).jpg);">
+          <div
+            class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:rounded-2xl p-5">
+            <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Koenigsegg One</h1>
+            <p class="text-white md:text-sm lg:text-xl font-bold">You can buy a lot with $2 million — a really nice
+              house, about 80
+              Mazda MX-5’s, or this Swedish “megacar”.</p>
+            <button class="btn w-fit text-cPrimary text-xs md:text-base font-bold bg-transparent border-none p-0">Buy
+              Now</button>
+          </div>
+          <!-- <img src="./images/wallpaperflare.com_wallpaper (2).jpg" class="w-full" /> -->
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="hidden md:flex btn btn-circle opacity-70">❮</a>
+            <a href="#slide3" class="hidden md:flex btn btn-circle opacity-70">❯</a>
+          </div>
+        </div>
+        <div id="slide3"
+          class="carousel-item relative w-full h-52 md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
+          style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(5\).jpg);">
+          <div
+            class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:bg-white md:bg-opacity-25 md:rounded-2xl p-5">
+            <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Aston Martin One-77</h1>
+            <p class="text-white md:text-sm lg:text-xl font-bold">Under the vented hood lurks a naturally aspirated V12
+              that displaces 7.3 liters, which is a lot. It produces 750 hp and 553 lb-ft.</p>
+            <button class="btn w-fit text-cPrimary text-xs md:text-base font-bold bg-transparent border-none p-0">Buy
+              Now</button>
+          </div>
+          <!-- <img src="./images/wallpaperflare.com_wallpaper (5).jpg" class="w-full" /> -->
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="hidden md:flex btn btn-circle opacity-70">❮</a>
+            <a href="#slide1" class="hidden md:flex btn btn-circle opacity-70">❯</a>
+          </div>
+        </div>
       </div>
-    </nav>
-    <div class="carousel w-full">
-      <div id="slide1"
-        class="carousel-item relative w-full h-52 md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
-        style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(1\).jpg);">
-        <div
-          class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:bg-white md:bg-opacity-25 md:rounded-2xl p-5">
-          <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Ferrari LaFerrari</h1>
-          <p class="text-white md:text-sm lg:text-xl font-bold">This dragon-like performance car accelerates from 0 to
-            60 mph in less than 3.0 seconds.</p>
-          <button class="btn w-fit text-cPrimary text-xs md:text-base font-bold bg-transparent border-none p-0">Buy
-            Now</button>
-          <!-- <button class="md:mt-2 btn w-fit text-cPrimary md:text-white text-xs lg:text-xl font-bold bg-transparent md:bg-cPrimary border-none">Buy
-            Now</button> -->
-        </div>
-        <!-- <img src="./images/wallpaperflare.com_wallpaper (1).jpg" class="w-full" /> -->
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="hidden md:flex btn btn-circle opacity-70">❮</a>
-          <a href="#slide2" class="hidden md:flex btn btn-circle opacity-70">❯</a>
-        </div>
-      </div>
-      <div id="slide2"
-        class="carousel-item relative w-full h-52  md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
-        style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(2\).jpg);">
-        <div
-          class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:rounded-2xl p-5">
-          <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Koenigsegg One</h1>
-          <p class="text-white md:text-sm lg:text-xl font-bold">You can buy a lot with $2 million — a really nice
-            house, about 80
-            Mazda MX-5’s, or this Swedish “megacar”.</p>
-          <button class="btn w-fit text-cPrimary text-xs md:text-base font-bold bg-transparent border-none p-0">Buy
-            Now</button>
-        </div>
-        <!-- <img src="./images/wallpaperflare.com_wallpaper (2).jpg" class="w-full" /> -->
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="hidden md:flex btn btn-circle opacity-70">❮</a>
-          <a href="#slide3" class="hidden md:flex btn btn-circle opacity-70">❯</a>
-        </div>
-      </div>
-      <div id="slide3"
-        class="carousel-item relative w-full h-52 md:h-96 lg:h-160 xl:h-180 bg-cover bg-center bg-no-repeat"
-        style="background-image: url(./images/wallpaperflare.com_wallpaper\ \(5\).jpg);">
-        <div
-          class="m-auto md:mt-6 md:ml-16 lg:mt-16 lg:ml-16 md:w-1/2 lg:w-1/2 h-full md:h-max bg-black bg-opacity-30 md:bg-white md:bg-opacity-25 md:rounded-2xl p-5">
-          <h1 class="text-white md:text-base lg:text-2xl font-bold mb-4">Aston Martin One-77</h1>
-          <p class="text-white md:text-sm lg:text-xl font-bold">Under the vented hood lurks a naturally aspirated V12
-            that displaces 7.3 liters, which is a lot. It produces 750 hp and 553 lb-ft.</p>
-          <button class="btn w-fit text-cPrimary text-xs md:text-base font-bold bg-transparent border-none p-0">Buy
-            Now</button>
-        </div>
-        <!-- <img src="./images/wallpaperflare.com_wallpaper (5).jpg" class="w-full" /> -->
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="hidden md:flex btn btn-circle opacity-70">❮</a>
-          <a href="#slide1" class="hidden md:flex btn btn-circle opacity-70">❯</a>
-        </div>
-      </div>
+    </header>
+    <div class="flex md:hidden justify-center w-full py-2 gap-2">
+      <a href="#slide1" class="btn btn-xs bg-cSecondary text-white">1</a>
+      <a href="#slide2" class="btn btn-xs bg-cSecondary text-white">2</a>
+      <a href="#slide3" class="btn btn-xs bg-cSecondary text-white">3</a>
     </div>
-  </header>
-  <div class="flex md:hidden justify-center w-full py-2 gap-2">
-    <a href="#slide1" class="btn btn-xs bg-cSecondary text-white">1</a>
-    <a href="#slide2" class="btn btn-xs bg-cSecondary text-white">2</a>
-    <a href="#slide3" class="btn btn-xs bg-cSecondary text-white">3</a>
+    <main>
+      <section class="mt-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
+        <h1 class="text-center text-3xl font-bold mb-6">Latest <span class="text-cPrimary">News</span></h1>
+        <div class="flex flex-col md:flex-row gap-3">
+          <div class="card md:w-1/3 bg-base-100 shadow-xl">
+            <figure><img src="./images/IMG_20240120_130253.jpg" alt="Cars" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Mercedes Benz:<br>Vision AVTR</h2>
+              <p>The 2009 science fiction movie Avatar, which takes Dances With Wolves to another planet and dives in.
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Read More</div>
+              </div>
+            </div>
+          </div>
+          <div class="card md:w-1/3 bg-base-100 shadow-xl">
+            <figure><img src="./images/lambo_v12_049.jpg" alt="Cars" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Lamborghini V12:<br>Vision Gran Turismo</h2>
+              <p>Lambo V12 Vision Gran Turismo, the concept was designed exclusively for the racing game.</p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Read More</div>
+              </div>
+            </div>
+          </div>
+          <div class="card md:w-1/3 bg-base-100 shadow-xl">
+            <figure><img src="./images/tour-roll-royces-forward-looking-concept-car-01.webp" alt="Cars" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Rolls Royce 103EX:<br>Vision Next 100</h2>
+              <p>Looking towards the next 100 years, each and every Rolls‑Royce will be a unique work of art.</p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Read More</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
+        <h1 class="text-center text-3xl font-bold mb-6">All About <span class="text-cPrimary">Speed</span> </h1>
+        <div class="flex flex-col md:flex-row gap-3">
+          <div class="card md:w-1/3 glass">
+            <figure class="h-[9.5rem] xl:h-52"><img src="./images/wallpaperflare.com_wallpaper.jpg" alt="car!" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Lamborghini Veneno</h2>
+              <p>The car is absolutely stunning from every angle, and to this day, we’re not convinced it isn’t an alien
+                spacecraft.</p>
+              <div class="card-actions justify-between items-center">
+                <h1 class="text-lime-600 text-2xl font-bold">$4.5M</h1>
+                <button class="btn btn-primary bg-cPrimary border-none text-white ">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card md:w-1/3 glass">
+            <figure class="h-[9.5rem] xl:h-52"><img src="./images/wallpaperflare.com_wallpaper (3).jpg" alt="car!" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Mansory Vivere Bugatti Veyron</h2>
+              <p>The car is absolutely stunning from every angle, and to this day, we’re not convinced it isn’t an alien
+                spacecraft.</p>
+              <div class="card-actions justify-between items-center">
+                <h1 class="text-lime-600 text-2xl font-bold">$4.5M</h1>
+                <button class="btn btn-primary bg-cPrimary border-none text-white ">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card md:w-1/3 glass">
+            <figure class="h-[9.5rem] xl:h-52"><img src="./images/wallpaperflare.com_wallpaper (6).jpg" alt="car!" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Pagani Huayra</h2>
+              <p>The Huayra is equally as famous for its odd-sounding name as it is for its face-melting performance.
+                Named after the Incan God of Winds.</p>
+              <div class="card-actions justify-between items-center">
+                <h1 class="text-lime-600 text-2xl font-bold">$1.4M</h1>
+                <button class="btn btn-primary bg-cPrimary border-none text-white ">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
+        <h1 class="text-center text-3xl font-bold mb-6">Client <span class="text-cPrimary">Review</span></h1>
+        <div class="flex flex-col md:flex-row gap-3">
+          <div class="card md:w-1/3 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/user-1.png" alt="user-1" class="rounded-full" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <p>Lux Drive's site is a breeze to use, and their luxury car selection is fantastic. The buying process
+                was straightforward and made the whole experience enjoyable.</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              </div>
+              <p class="font-bold text-lime-600">Miles Moralas</p>
+            </div>
+          </div>
+          <div class="card md:w-1/3 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/user-2.png" alt="user-2" class="rounded-full" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <p>Lux Drive's website is so user-friendly, and the variety of luxury cars they offer is impressive. The
+                whole buying process was smooth, making it a delightful experience.</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p class="font-bold text-lime-600">Angelina Gomez</p>
+            </div>
+          </div>
+          <div class="card md:w-1/3 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/user-3.png" alt="user-3" class="rounded-full" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <p>Navigating Lux Drive's website is a joy, and the range of luxury cars is top-notch. Buying from them
+                was easy-peasy, adding a touch of luxury to the entire process.</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              </div>
+              <p class="font-bold text-lime-600">Regina Watson</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
+        <h1 class="text-center text-3xl font-bold mb-6">Frequently Asked<span class="text-cPrimary">Questions</span>
+        </h1>
+        <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+          <img class="w-3/4 md:w-1/3" src="./images/faq.png" alt="">
+          <div class="flex flex-col gap-3">
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                How do I browse cars on Lux Drive's website?
+              </div>
+              <div class="collapse-content">
+                <p>Simply visit our homepage, explore the diverse car categories, and refine your search using filters
+                  like brand, model, and price range for a tailored luxury car selection.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                What sets Lux Drive apart in terms of customer service?
+              </div>
+              <div class="collapse-content">
+                <p>At Lux Drive, we pride ourselves on personalized assistance. Our dedicated support team ensures a
+                  smooth and enjoyable experience, addressing any queries or concerns promptly.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Can I schedule a test drive before making a purchase?
+              </div>
+              <div class="collapse-content">
+                <p>Absolutely! Lux Drive encourages test drives to ensure you feel confident in your choice. Use our
+                  online scheduling tool or contact our team to arrange a convenient time at your nearest dealership.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
-
-  <main>
-    <section class="mt-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
-      <h1 class="text-center text-3xl font-bold mb-6">Latest <span class="text-cPrimary">News</span></h1>
-      <div class="flex flex-col md:flex-row gap-3">
-        <div class="card md:w-1/3 bg-base-100 shadow-xl">
-          <figure><img src="./images/IMG_20240120_130253.jpg" alt="Cars" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Mercedes Benz:<br>Vision AVTR</h2>
-            <p>The 2009 science fiction movie Avatar, which takes Dances With Wolves to another planet and dives in.</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Read More</div>
-            </div>
-          </div>
-        </div>
-        <div class="card md:w-1/3 bg-base-100 shadow-xl">
-          <figure><img src="./images/lambo_v12_049.jpg" alt="Cars" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Lamborghini V12:<br>Vision Gran Turismo</h2>
-            <p>Lambo V12 Vision Gran Turismo, the concept was designed exclusively for the racing game.</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Read More</div>
-            </div>
-          </div>
-        </div>
-        <div class="card md:w-1/3 bg-base-100 shadow-xl">
-          <figure><img src="./images/tour-roll-royces-forward-looking-concept-car-01.webp" alt="Cars" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Rolls Royce 103EX:<br>Vision Next 100</h2>
-            <p>Looking towards the next 100 years, each and every Rolls‑Royce will be a unique work of art.</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Read More</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
-      <h1 class="text-center text-3xl font-bold mb-6">All About <span class="text-cPrimary">Speed</span> </h1>
-      <div class="flex flex-col md:flex-row gap-3">
-        <div class="card md:w-1/3 glass">
-          <figure class="h-[9.5rem] xl:h-52"><img src="./images/wallpaperflare.com_wallpaper.jpg" alt="car!" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Lamborghini Veneno</h2>
-            <p>The car is absolutely stunning from every angle, and to this day, we’re not convinced it isn’t an alien
-              spacecraft.</p>
-            <div class="card-actions justify-between items-center">
-              <h1 class="text-lime-600 text-2xl font-bold">$4.5M</h1>
-              <button class="btn btn-primary bg-cPrimary border-none text-white ">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="card md:w-1/3 glass">
-          <figure class="h-[9.5rem] xl:h-52"><img src="./images/wallpaperflare.com_wallpaper (3).jpg" alt="car!" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Mansory Vivere Bugatti Veyron</h2>
-            <p>The car is absolutely stunning from every angle, and to this day, we’re not convinced it isn’t an alien
-              spacecraft.</p>
-            <div class="card-actions justify-between items-center">
-              <h1 class="text-lime-600 text-2xl font-bold">$4.5M</h1>
-              <button class="btn btn-primary bg-cPrimary border-none text-white ">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="card md:w-1/3 glass">
-          <figure class="h-[9.5rem] xl:h-52"><img src="./images/wallpaperflare.com_wallpaper (6).jpg" alt="car!" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Pagani Huayra</h2>
-            <p>The Huayra is equally as famous for its odd-sounding name as it is for its face-melting performance.
-              Named after the Incan God of Winds.</p>
-            <div class="card-actions justify-between items-center">
-              <h1 class="text-lime-600 text-2xl font-bold">$1.4M</h1>
-              <button class="btn btn-primary bg-cPrimary border-none text-white ">Buy Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
-      <h1 class="text-center text-3xl font-bold mb-6">Client <span class="text-cPrimary">Review</span></h1>
-      <div class="flex flex-col md:flex-row gap-3">
-        <div class="card md:w-1/3 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img src="./images/user-1.png" alt="user-1" class="rounded-full" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <p>Lux Drive's site is a breeze to use, and their luxury car selection is fantastic. The buying process
-              was straightforward and made the whole experience enjoyable.</p>
-            <div class="rating">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-            </div>
-            <p class="font-bold text-lime-600">Miles Moralas</p>
-          </div>
-        </div>
-        <div class="card md:w-1/3 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img src="./images/user-2.png" alt="user-2" class="rounded-full" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <p>Lux Drive's website is so user-friendly, and the variety of luxury cars they offer is impressive. The
-              whole buying process was smooth, making it a delightful experience.</p>
-            <div class="rating">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-            </div>
-            <p class="font-bold text-lime-600">Angelina Gomez</p>
-          </div>
-        </div>
-        <div class="card md:w-1/3 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img src="./images/user-3.png" alt="user-3" class="rounded-full" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <p>Navigating Lux Drive's website is a joy, and the range of luxury cars is top-notch. Buying from them
-              was easy-peasy, adding a touch of luxury to the entire process.</p>
-            <div class="rating">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-            </div>
-            <p class="font-bold text-lime-600">Regina Watson</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="my-12 pl-6 pr-6 lg:pl-12 lg:pr-12">
-      <h1 class="text-center text-3xl font-bold mb-6">Frequently Asked<span class="text-cPrimary">Questions</span></h1>
-      <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-        <img class="w-3/4 md:w-1/3" src="./images/faq.png" alt="">
-        <div class="flex flex-col gap-3">
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">
-              How do I browse cars on Lux Drive's website?
-            </div>
-            <div class="collapse-content">
-              <p>Simply visit our homepage, explore the diverse car categories, and refine your search using filters like brand, model, and price range for a tailored luxury car selection.</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              What sets Lux Drive apart in terms of customer service?
-            </div>
-            <div class="collapse-content">
-              <p>At Lux Drive, we pride ourselves on personalized assistance. Our dedicated support team ensures a smooth and enjoyable experience, addressing any queries or concerns promptly.</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              Can I schedule a test drive before making a purchase?
-            </div>
-            <div class="collapse-content">
-              <p>Absolutely! Lux Drive encourages test drives to ensure you feel confident in your choice. Use our online scheduling tool or contact our team to arrange a convenient time at your nearest dealership.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="py-16 md:px-6 lg:px-24 bg-black flex flex-col md:flex-row justify-between items-center gap-4">
+  <footer class="bg-black">
+    <div
+      class="max-w-[1440px] mx-auto py-16 md:px-6 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="w-max text-sm text-white flex flex-col justify-center items-center md:justify-start md:items-start">
         <ul class="mb-4 flex gap-4">
           <li>Download Now</li>
@@ -317,6 +327,7 @@
         <img class="h-8 rounded-base my-3" src="./images/android.png" alt="">
         <img class="h-8 rounded-base" src="./images/ios.png" alt="">
       </div>
+    </div>
   </footer>
 </body>
 
